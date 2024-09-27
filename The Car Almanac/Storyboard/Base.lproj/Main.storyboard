@@ -18,7 +18,7 @@
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showDetal" textLabel="Ifv-aN-P67" detailTextLabel="tmP-Ov-Td2" style="IBUITableViewCellStyleSubtitle" id="ajZ-ab-y9O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showDetailSegue" textLabel="Ifv-aN-P67" detailTextLabel="tmP-Ov-Td2" style="IBUITableViewCellStyleSubtitle" id="ajZ-ab-y9O">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ajZ-ab-y9O" id="b6Z-03-dkr">

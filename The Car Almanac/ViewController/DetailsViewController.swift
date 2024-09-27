@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+final class DetailsViewController: UIViewController {
     
     //MARK: - IBOutlet
     @IBOutlet var detailInfoLabel: UILabel!
@@ -24,6 +24,7 @@ class DetailsViewController: UIViewController {
         imageFix()
     }
 }
+
 //MARK: - UpdateUI
 extension DetailsViewController {
     private func textLine() {
@@ -60,29 +61,20 @@ extension DetailsViewController {
         }
     }
     private func imageFix() {
-        imageCar?.contentMode = .scaleAspectFill // Заполняем UIImageView без искажения пропорций
-        imageCar?.layer.cornerRadius = 15 // Скругленные углы
-        imageCar?.clipsToBounds = true // Обрезаем содержимое по границам
+        imageCar?.contentMode = .scaleAspectFill
+        imageCar?.layer.cornerRadius = 15
+        imageCar?.clipsToBounds = true
     }
 }
 extension UIView {
     func applyRedBlackGradient() {
         let gradientLayer = CAGradientLayer()
-        
-        // Цвета градиента — красный и чёрный
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.black.cgColor]
-        
-        // Определяем расположение цветов: красный сверху, чёрный снизу
         gradientLayer.locations = [0.0, 1.0]
-        
-        // Направление градиента — сверху вниз (по вертикали)
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0) // Вверху посередине
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)   // Внизу посередине
-        
-        // Устанавливаем границы градиента, чтобы они соответствовали размеру представления
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
         gradientLayer.frame = self.bounds
         
-        // Добавляем градиент на слой представления
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
